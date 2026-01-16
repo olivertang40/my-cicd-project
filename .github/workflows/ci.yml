@@ -63,6 +63,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
+          context: .
           push: true
           tags: snakeystart/github_ci_demo_app:latest
 
